@@ -1,0 +1,20 @@
+The Godfather	The aging patriarch of an organized crime dynasty transfers control of his clandestine empire to his reluctant son.	1
+The Shawshank Redemption	"Two imprisoned men bond over a number of years, finding solace and eventual redemption through acts of common decency."	2
+Schindler's List	"In German-occupied Poland during World War II, Oskar Schindler gradually becomes concerned for his Jewish workforce after witnessing their persecution by the Nazi Germans."	3
+Raging Bull	"An emotionally self-destructive boxer's journey through life, as the violence and temper that leads him to the top in the ring destroys his life outside it."	4
+Casablanca	"In Casablanca, Morocco in December 1941, a cynical American expatriate meets a former lover, with unforeseen complications."	5
+Citizen Kane	"Following the death of a publishing tycoon, news reporters scramble to discover the meaning of his final utterance."	6
+Gone with the Wind	A manipulative Southern belle carries on a turbulent affair with a blockade runner during the American Civil War.	7
+The Wizard of Oz	Dorothy Gale is swept away to a magical land in a tornado and embarks on a quest to see the Wizard who can help her return home.	8
+One Flew Over the Cuckoo's Nest	A criminal pleads insanity after getting into trouble again and once in the mental institution rebels against the oppressive nurse and rallies up the scared patients.	9
+Lawrence of Arabia	"The story of T.E. Lawrence, the English officer who successfully united and led the diverse, often warring, Arab tribes during World War I in order to fight the Turks."	10
+Vertigo	"A San Francisco detective suffering from acrophobia investigates the strange activities of an old friend's wife, all the while becoming dangerously obsessed with her."	11
+Psycho	"A Phoenix secretary embezzles $40,000 from her employer's client, goes on the run, and checks into a remote motel run by a young man under the domination of his mother."	12
+The Godfather: Part II	"The early life and career of Vito Corleone in 1920s New York is portrayed while his son, Michael, expands and tightens his grip on the family crime syndicate."	13
+On the Waterfront	An ex-prize fighter turned longshoreman struggles to stand up to his corrupt union bosses.	14
+Sunset Blvd.	A hack screenwriter writes a screenplay for a former silent-film star who has faded into Hollywood obscurity.	15
+Forrest Gump	"Forrest Gump, while not intelligent, has accidentally been present at many historic moments, but his true love, Jenny Curran, eludes him."	16
+The Sound of Music	A woman leaves an Austrian convent to become a governess to the children of a Naval officer widower.	17
+Angry Men	A jury holdout attempts to prevent a miscarriage of justice by forcing his colleagues to reconsider the evidence.	18
+West Side Story	"Two youngsters from rival New York City gangs fall in love, but tensions between their respective friends build toward tragedy."	19
+Star Wars: Episode IV - A New Hope	"Luke Skywalker joins forces with a Jedi Knight, a cocky pilot, a wookiee and two droids to save the galaxy from the Empire's world-destroying battle-station, while also attempting to rescue Princess Leia from the evil Darth Vader."	20
