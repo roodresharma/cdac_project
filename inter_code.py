@@ -10,21 +10,18 @@ import pandas as pd
 import nltk
 import re
 from nltk.stem.snowball import SnowballStemmer
-from tokenize import tokenize,STRING
-from sklearn.feature_extraction.text import TfidfVectorizer,TfidfTransformer
+from sklearn.feature_extraction.text import TfidfVectorizer
 from sklearn.metrics.pairwise import cosine_similarity
 from sklearn.cluster import KMeans
-import string
-from sklearn import metrics
-from sklearn.decomposition import TruncatedSVD
+#from sklearn import metrics
 
 
 # Basic Declarations Begin
-file_path="C:\\Users\HP\Desktop\Movie_Synopsis.txt"
+file_path="records.txt"
 data=np.loadtxt(file_path, dtype="string",delimiter='\t') # Load complete file in data
 titles=data[:,0]    # Seperate titles list
 synopsis=data[:,1]  #Seperate synopsis list
-rank=np.array(data[:,2],dtype='int')
+rating=np.array(data[:,2],dtype='float')
 stopwords = nltk.corpus.stopwords.words('english')
 stemmer = SnowballStemmer("english")
 punctuation=[',','.','!','\'','\"','#','$','&',';','?','\'\'','``','\'s','\'am','\'re']
@@ -49,7 +46,7 @@ def tokenize_stem_re(text):
     
 tokens_only,tokens_stemmed=tokenize_stem(synopsis)
 word_frame = pd.DataFrame({'words': tokens_only}, index = tokens_stemmed)
-tfidf_vectorizer = TfidfVectorizer(use_idf=True,tokenizer=tokenize_stem_re,stop_words='english',analyzer='word')
+tfidf_vectorizer = TfidfVectorizer(use_idf=True,tokenizer=tokenize_stem_re,stop_words='english',analyzer='word',min_df=0.05)
 tfidf_matrix=tfidf_vectorizer.fit_transform(synopsis)   
 tfidf_vectorizer.get_feature_names()
 terms = tfidf_vectorizer.get_feature_names()
@@ -58,10 +55,10 @@ num_clusters = 5
 km = KMeans(n_clusters=num_clusters)
 km.fit(tfidf_matrix)
 clusters = km.labels_.tolist()
-films = { 'title': titles,'rank': rank, 'synopsis': synopsis, 'cluster': clusters}
-frame = pd.DataFrame(films, index = [clusters] , columns = ['title','rank','cluster'])
+films = { 'title': titles,'rating': rating, 'synopsis': synopsis, 'cluster': clusters}
+frame = pd.DataFrame(films, index = [clusters] , columns = ['title','rating','synopsis','cluster'])
 frame['cluster'].value_counts()
-grouped = frame['rank'].groupby(frame['cluster'])
+grouped = frame['rating'].groupby(frame['cluster'])
 print(grouped.mean())
 print("Top terms per cluster:")
 print()
